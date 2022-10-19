@@ -9,6 +9,16 @@ const bs = require("browser-sync").create();
 const rimraf = require("rimraf");
 const comments = require("gulp-header-comment");
 
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src("./prod/**/*")
+    .pipe(deploy({ 
+      remoteUrl: "https://github.com/hitesh-anand/aca_web.io.git",
+      branch: "master"
+    }))
+});
+
 var path = {
   src: {
     html: "source/*.html",
