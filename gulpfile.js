@@ -14,8 +14,8 @@ var deploy = require('gulp-gh-pages');
 gulp.task('deploy', function () {
   return gulp.src("./prod/**/*")
     .pipe(deploy({ 
-      remoteUrl: "https://github.com/hitesh-anand/aca_web.io.git",
-      branch: "master"
+      remoteUrl: "https://github.com/hitesh-anand/hitesh-anand.io.git",
+      branch: "main"
     }))
 });
 
