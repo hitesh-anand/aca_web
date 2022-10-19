@@ -4,7 +4,10 @@
   "description": "educenter free education template",
   "author": "Themefisher",
   "license": "MIT",
+  "homepage": "http://hitesh-anand.github.io/aca_web",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "gulp",
     "build": "gulp build"
   },
@@ -13,10 +16,14 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-file-include": "^2.3.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-header-comment": "^0.10.0",
     "gulp-rimraf": "^1.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-header-comment": "^0.10.0",
     "sass": "^1.52.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
