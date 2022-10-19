@@ -9,14 +9,14 @@ const bs = require("browser-sync").create();
 const rimraf = require("rimraf");
 const comments = require("gulp-header-comment");
 
-var deploy = require('gulp-gh-pages');
+var deploy      = require('gulp-gh-pages');
 
+/**
+ * Push build to gh-pages
+ */
 gulp.task('deploy', function () {
-  return gulp.src("./prod/**/*")
-    .pipe(deploy({ 
-      remoteUrl: "https://github.com/hitesh-anand/hitesh-anand.io.git",
-      branch: "main"
-    }))
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
 
 var path = {
