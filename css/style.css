@@ -465,6 +465,11 @@ textarea.form-control {
   transform-origin: top;
 }
 
+.logo {
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
 .navigation {
   background: linear-gradient(to right, transparent 50%, #2c38ba 50%);
   transition: 0.2s ease;
