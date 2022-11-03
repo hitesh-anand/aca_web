@@ -14,8 +14,11 @@
     <div class="row">
       <div class="col-12">
         <div class="d-flex align-items-center section-title justify-content-between">
-          <h2 class="mb-0 text-nowrap mr-3">Best Faculty Award</h2>
+          <h2 class="mb-0 text-nowrap mr-3">Our Course</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="courses.html" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block">see all</a>
+          </div>
         </div>
       </div>
     </div>
@@ -30,9 +33,9 @@
 </section>
 <!-- /courses -->
 
-<!-- @@include('blocks/cta.htm') -->
+@@include('blocks/cta.htm')
 
-<!-- @@include('blocks/success-story.htm') -->
+@@include('blocks/success-story.htm')
 
 <!-- events -->
 <section class="section bg-gray">
@@ -40,8 +43,11 @@
     <div class="row">
       <div class="col-12">
         <div class="d-flex align-items-center section-title justify-content-between">
-          <h2 class="mb-0 text-nowrap mr-3" id = "eventheading">Events</h2>
+          <h2 class="mb-0 text-nowrap mr-3">Upcoming Events</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="events.html" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block">see all</a>
+          </div>
         </div>
       </div>
     </div>
@@ -56,22 +62,20 @@
 </section>
 <!-- /events -->
 
-
+@@include('blocks/teachers.htm')
 
 <!-- blog -->
 <section class="section pt-0">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class= "section-title" id="projects">Projects</h2>
+        <h2 class="section-title">Latest News</h2>
       </div>
     </div>
     @@include('blocks/blog.htm')
   </div>
 </section>
 <!-- /blog -->
-
-@@include('blocks/teachers.htm')
 
 @@include('blocks/footer.htm')
 

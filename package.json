@@ -4,10 +4,10 @@
   "description": "educenter free education template",
   "author": "Themefisher",
   "license": "MIT",
-  "homepage": "http://hitesh-anand.github.io/aca_web",
+  "homepage": "https://hitesh-anand.github.io/aca_web",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d source",
     "dev": "gulp",
     "build": "gulp build"
   },
