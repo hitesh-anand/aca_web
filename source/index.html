@@ -19,70 +19,17 @@
 
         <!-- add here if other things need to be added using div like "@@include('...')"-->
 
-        <!-- courses -->
-        <section class="section-sm">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex align-items-center section-title justify-content-between">
-                  <h2 class="mb-0 text-nowrap mr-3">Our Course</h2>
-                  <div class="border-top w-100 border-primary d-none d-sm-block"></div>
-                  <div>
-                    <a href="courses.html" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block">see all</a>
-                  </div>
-                </div>
-              </div>
+        <!-- best faculty award -->
+        <section class="section" id = "bestfaculty">
+          <div class="col-12">
+            <div class="d-flex align-items-center section-title justify-content-between">
+              <h2 class="mb-0 text-nowrap mr-3">Best Faculty Award</h2>
+              <div class="border-top w-100 border-primary d-none d-sm-block"></div>
             </div>
             @@include('blocks/course.htm')
-            <!-- mobile see all button -->
-            <div class="row">
-              <div class="col-12 text-center">
-                <a href="courses.html" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">sell all</a>
-              </div>
-            </div>
           </div>
         </section>
-        <!-- /courses -->
-
-
-        @@include('blocks/teachers.htm')
-
-        <!-- blog -->
-        <section class="section pt-0">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="section-title">Latest News</h2>
-              </div>
-            </div>
-            @@include('blocks/blog.htm')
-          </div>
-        </section>
-        <!-- /blog -->
-
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <!--side column upcoming events -->
       <div class="col-md-3 col-12 order-1 order-md-2 mb-4 mb-md-0">
@@ -97,7 +44,26 @@
             </div>
          <!-- </div> -->
 
-          @@include('blocks/events.htm')
+        <div class="row d-flex justify-content-center justify-content-between container mr-1 ml-1">
+          <!-- <div class="border-top border-primary d-none d-block"> -->
+            <!-- event -->
+            <div class="card border-0 rounded-0 hover-shadow">
+              <div class="card-img position-relative">
+                <img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">
+                <div class="card-date">
+                  <span>8</span><br>
+                  November
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- location -->
+                <p><i class="ti-time text-primary icon-sm mr-2"></i>4:30 pm <br>
+                <i class="ti-location-pin text-primary mr-2"></i>RM101, IIT Kanpur</p>
+                <a href="event-single.html"><h4 class="card-title">Happy Hour</h4></a>
+              </div>
+          </div>
+        </div>
+        <!-- </div> -->
 
         </div>
 
@@ -108,11 +74,49 @@
           </div>
         </div>
       </div>
+
 </section>
 
 
-@@include('blocks/cta.htm')
-@@include('blocks/success-story.htm')
+<!-- courses -->
+<section class="section-sm" id = "projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3">Projects</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="courses.html" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block">see all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('blocks/blog.htm')
+    
+  </div>
+</section>
+
+
+<!-- events -->
+<section class="section bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3" id = "eventheading">Events</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+        </div>
+      </div>
+    </div>
+    @@include('blocks/events.htm')
+  </div>
+</section>
+
+@@include('blocks/teachers.htm')
+
+<!-- @@include('blocks/cta.htm')-->
+<!-- @@include('blocks/success-story.htm') -->
 
 @@include('blocks/footer.htm')
 
