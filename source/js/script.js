@@ -1,11 +1,11 @@
 (function ($) {
 	'use strict';
-
+	
 	// Preloader js    
 	$(window).on('load', function () {
 		$('.preloader').fadeOut(700);
 	});
-
+	
 	// Sticky Menu
 	$(window).scroll(function () {
 		var height = $('.top-header').innerHeight();
@@ -27,14 +27,14 @@
 			}, 300);
 		});
 	}
-
+	
 	// Background-images
 	$('[data-background]').each(function () {
 		$(this).css({
 			'background-image': 'url(' + $(this).data('background') + ')'
 		});
 	});
-
+	
 	//Hero Slider
 	$('.hero-slider').slick({
 		autoplay: true,
@@ -49,13 +49,13 @@
 		dots: true
 	});
 	$('.hero-slider').slickAnimation();
-
+	
 	// venobox popup
 	$(document).ready(function () {
 		$('.venobox').venobox();
 	});
-
-
+	
+	
 	// filter
 	$(document).ready(function () {
 		var containerEl = document.querySelector('.filtr-container');
@@ -69,7 +69,7 @@
 			$(this).addClass('active');
 		});
 	});
-
+	
 	//  Count Up
 	function counter() {
 		var oTop;
@@ -79,7 +79,7 @@
 		if ($(window).scrollTop() > oTop) {
 			$('.count').each(function () {
 				var $this = $(this),
-					countTo = $this.attr('data-count');
+				countTo = $this.attr('data-count');
 				$({
 					countNum: $this.text()
 				}).animate({
@@ -100,5 +100,20 @@
 	$(window).on('scroll', function () {
 		counter();
 	});
-
+	
+	
 })(jQuery);
+
+$.get( "data/facultyaward.csv", function( data ) {
+	var content="<tbody>"
+	data.split("\n").forEach(function(row) {
+		content += "<tr>";
+		
+		row.split(",").forEach(function(cell) {
+			content += "<td>" + cell + "</td>" ;
+		});
+		content += "</tr>";
+	});
+	content+="</tbody>"
+	$('#fac-award-wrapper')[0].innerHTML+=content;
+});
