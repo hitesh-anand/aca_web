@@ -117,3 +117,18 @@ $.get( "data/facultyaward.csv", function( data ) {
 	content+="</tbody>"
 	$('#fac-award-wrapper')[0].innerHTML+=content;
 });
+var scrollToElement = require('scroll-to-element');
+const idDic ={
+	"toHome" : "#home",
+	"toAbout" : "#about",
+	"toEvents":"#events",
+	"toBestFac":"#best-fac",
+	"toProjects":"#projects",
+	"toContacts":"#contacts"
+}
+$(document).ready(function(){
+    $(".scroll-ani").click(function(){
+		scrollToElement(idDic[$(this).attr("id")],{offset: -100});
+        
+    });
+});

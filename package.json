@@ -25,6 +25,7 @@
     "merge-stream": "^2.0.0",
     "require": "^2.4.20",
     "sass": "^1.52.3",
+    "scroll-to-element": "^2.0.3",
     "vinyl-source-stream": "^2.0.0",
     "xlsx": "^0.18.5"
   },
