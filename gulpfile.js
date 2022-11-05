@@ -11,6 +11,11 @@ const comments = require("gulp-header-comment");
 
 var deploy      = require('gulp-gh-pages');
 
+var browserify = require('browserify');
+
+
+var source = require('vinyl-source-stream');
+
 // /**
 //  * Push build to gh-pages
 //  */
@@ -29,12 +34,27 @@ var path = {
     js: "source/js/*.js",
     scss: "source/scss/**/*.scss",
     images: "source/images/**/*.+(png|jpg|gif|svg)",
+    data: "source/data/*"
   },
   build: {
     dirBuild: "theme/",
     dirDev: "theme/",
   },
 };
+
+gulp.task('browserify', function() {
+  return browserify("source/js/script.js")
+    .bundle()
+    //Pass desired output filename to vinyl-source-stream
+    .pipe(source('script.js'))
+    // Start piping stream to tasks!
+    .pipe(gulp.dest(path.build.dirDev + "js/"))
+    .pipe(
+      bs.reload({
+        stream: true,
+      })
+    );
+});
 
 // HTML
 gulp.task("html:build", function () {
@@ -121,6 +141,17 @@ gulp.task("images:build", function () {
     );
 });
 
+gulp.task("data:build", function () {
+  return gulp
+    .src(path.src.data)
+    .pipe(gulp.dest(path.build.dirDev + "data/"))
+    .pipe(
+      bs.reload({
+        stream: true,
+      })
+    );
+});
+
 // Plugins
 gulp.task("plugins:build", function () {
   return gulp
@@ -148,8 +179,9 @@ gulp.task("watch:build", function () {
   gulp.watch(path.src.html, gulp.series("html:build"));
   gulp.watch(path.src.htminc, gulp.series("html:build"));
   gulp.watch(path.src.scss, gulp.series("scss:build"));
-  gulp.watch(path.src.js, gulp.series("js:build"));
+  gulp.watch(path.src.js, gulp.series('browserify'));
   gulp.watch(path.src.images, gulp.series("images:build"));
+  gulp.watch(path.src.data, gulp.series("data:build"));
   gulp.watch(path.src.plugins, gulp.series("plugins:build"));
 });
 
@@ -159,9 +191,10 @@ gulp.task(
   gulp.series(
     "clean",
     "html:build",
-    "js:build",
+    'browserify',
     "scss:build",
     "images:build",
+    "data:build",
     "plugins:build",
     "others:build",
     gulp.parallel("watch:build", function () {
@@ -179,9 +212,11 @@ gulp.task(
   "build",
   gulp.series(
     "html:build",
-    "js:build",
+    'browserify',
     "scss:build",
     "images:build",
+    "data:build",
     "plugins:build"
   )
 );
+

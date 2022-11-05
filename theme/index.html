@@ -49,14 +49,14 @@
 <body>
   <!-- preloader start -->
   <div class="preloader">
-    <img src="images/preloader.gif" alt="preloader">
+    <img src="http://i.stack.imgur.com/SBv4T.gif" alt="preloader">
   </div>
   <!-- preloader end -->
 
   <!-- header -->
   <header class="fixed-top header">
     <!-- top header -->
-    <div class="top-header py-2 bg-white">
+    <!-- <div class="top-header py-2 bg-white">
       <div class="container">
         <div class="row no-gutters">
           <div class="col-lg-4 text-center text-lg-left">
@@ -88,7 +88,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- navbar -->
     <div class="navigation w-100">
       <div class="container">
@@ -101,25 +101,25 @@
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto text-center">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link scroll-ani" id="toHome" href="index.html">Home</a>
               </li>
               <li class="nav-item @@about">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link scroll-ani" id="toAbout" href="#about">About</a>
               </li>
               <li class="nav-item @@courses">
-                <a class="nav-link" href="#eventheading">Events</a>
+                <a class="nav-link scroll-ani" id="toEvents" href="#events">Events</a>
               </li>
               <li class="nav-item @@events">
-                <a class="nav-link" href="#bestfaculty">Best Faculty Award</a>
+                <a class="nav-link scroll-ani" id="toBestFac" href="#best-fac">Best Faculty Award</a>
               </li>
               <li class="nav-item @@blog">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link scroll-ani" id="toProjects" href="#projects">Projects</a>
               </li>
               <!-- <li class="nav-item @@blog">
-                <a class="nav-link" href="blog.html">Yearbook</a>
+                <a class="nav-link scroll-ani" id="" href="blog.html">Yearbook</a>
               </li> -->
               <li class="nav-item @@blog">
-                <a class="nav-link" href="#contacts">Contacts</a>
+                <a class="nav-link scroll-ani" id="toContacts" href="#contacts">Contacts</a>
               </li>
               <!-- <li class="nav-item dropdown view">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -255,50 +255,35 @@
           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
           ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
           nulla pariatur. Excepteur sint occaecat </p>
-        <p>cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-          unde omnis iste natus error sit voluptatem</p>
-        <a href="about.html" class="btn btn-outline-primary">Learn more</a>
-      </div> -->
-      <!-- <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0"> -->
-      <!-- <img class="img-fluid w-100" src="images/about/about-us.jpg" alt="about image"> -->
-      <!-- <div class="row"> -->
-      <div class="col-md-10 col-12 order-2 order-md-1">
-        <div>
-          <h2 class="section-title">About ACA</h2>
-          <p>Association for Computing Activities (ACA) is the Computer Science society of IIT Kanpur.</p>
-
-          <h4>Our Aims</h4>
-
-          <ul>
-            <li>To spread knowledge about Computer Science and technology.</li>
-            <li>To encourage students to get involved in extra-curricular engineering projects.</li>
-            <li>To provide computing resources and guidance to students.</li>
-            <li>To promote student-student and student-teacher interaction.</li>
-          </ul>
-
-          <p>ACA organizes departmental activities right from freshers&rsquo; to farewell in addition to several
-            programming competitions and lectures.</p>
-
-          <p>Don&rsquo;t forget to follow us on Facebook !</p>
-          <!-- <a href="about.html" class="btn btn-outline-primary">Learn more</a> -->
-        </div>
-      </div>
-      <!--side column -->
-      <div class="col-md-2 col-12 order-1 order-md-2 mb-4 mb-md-0">
-        
-        <!-- events -->
-        <section class="section bg-gray">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex align-items-center section-title justify-content-between">
-                  <h2 class="mb-0 text-nowrap mr-3">Upcoming Events</h2>
-                  <div class="border-top w-100 border-primary d-none d-sm-block"></div>
-                  <div>
-                    <a href="events.html" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block">see
-                      all</a>
+          <p>cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+            unde omnis iste natus error sit voluptatem</p>
+            <a href="about.html" class="btn btn-outline-primary">Learn more</a>
+          </div> -->
+          <!-- <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0"> -->
+            <!-- <img class="img-fluid w-100" src="images/about/about-us.jpg" alt="about image"> -->
+            <!-- <div class="row"> -->
+              <div class="col-md-8 col-12 order-2 order-md-1">
+                <div>
+                  <h2 class="section-title">About ACA</h2>
+                  <p>Association for Computing Activities (ACA) is the Computer Science society of IIT Kanpur.</p>
+                  
+                  <h4>Our Aims</h4>
+                  
+                  <ul>
+                    <li>To spread knowledge about Computer Science and technology.</li>
+                    <li>To encourage students to get involved in extra-curricular engineering projects.</li>
+                    <li>To provide computing resources and guidance to students.</li>
+                    <li>To promote student-student and student-teacher interaction.</li>
+                  </ul>
+                  
+                  <p>ACA organizes departmental activities right from freshers&rsquo; to farewell in addition to several
+                    programming competitions and lectures.</p>
+                    
+                    <p>Don&rsquo;t forget to follow us on Facebook !</p>
+                    <!-- <a href="about.html" class="btn btn-outline-primary">Learn more</a> -->
                   </div>
                 </div>
+
               </div>
             </div>
             <div class="row justify-content-center">
@@ -318,27 +303,65 @@
                       <h4 class="card-title">Happy Hour</h4>
                     </a>
                   </div>
+                <!--side column -->
+                <div class="col-md-4 col-12 order-1 order-md-2 mb-4 mb-md-0 hover">
+                  
+                  <!-- events -->
+                  <section class="section ">
+                    <div class="container bg-gray">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex align-items-center section-title justify-content-between">
+                            <h2 class="mb-0 text-nowrap mr-3">Upcoming Events</h2>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center">
+                        <!-- event -->
+                        <div>
+                          <div class="card border-0 rounded-0 hover-shadow">
+                            <div class="card-img position-relative">
+                              <img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">
+                              <div class="card-date"><span>26</span><br>September</div>
+                            </div>
+                            <div class="card-body">
+                              <!-- location -->
+                              <p><i class="ti-time text-primary icon-sm mr-2"></i>5:00pm <br>
+                                <i class="ti-location-pin text-primary mr-2"></i>RM 101, IIT Kanpur
+                              </p>
+                              <a href="event-single.html">
+                                <h4 class="card-title">Happy Hour</h4>
+                              </a>
+                            </div>
+                            <!-- <div class="border-top border-primary d-none d-sm-block justify-content-center w-100"> -->
+                              
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        
+                          <a href="#events" class="w-50 btn btn-sm btn-outline-primary d-none d-sm-block m-auto">see
+                            all</a>
+                        
+                      </div>
+                      
+                    </div>
+                    <!-- mobile see all button -->
+                    
+                  </section>
+                  <!-- /events -->
+
                 </div>
               </div>
             </div>
-          </div>
-          <!-- mobile see all button -->
-          <div class="row">
-            <div class="col-12 text-center">
-              <a href="course.html" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">sell all</a>
-            </div>
-          </div>
-      </div>
-</section>
-<!-- /events -->
-</div>
-</div>
-</div>
-</section>
-<!-- /about us -->
+          </section>
+          <!-- /about us -->
 
 <!-- courses -->
-<section class="section-sm">
+<section class="section-sm" id="best-fac">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -352,114 +375,124 @@
 <div class="row justify-content-center" id = "bestfaculty">
   <div id="post-content">
     <span itemprop="articleBody">
-
+      
       <p>Dr. Pankaj Jalote has instituted the CSE Best Teacher Award. The award includes a plaque given to the
         Professor. An appropriate citation written by the graduating batch is read out in praise of the professor
         selected for the award. The awardee is elected by the graduating BTech, MTech, and dual-degree students.</p>
-
-      <p>Dr. Pankaj Jalote is a former faculty member of the Department of CSE, IIT Kanpur. He has authored several
-        well-known books on software engineering and fault tolerance. He is on the Board of Advisors of many software
-        companies in India and USA, is a Technical Advisory Board member for Microsoft Research, India, and is on the
-        Editorial Board of IEEE Transactions on Software Engineering, and International Journal of Emperical Software
-        Engineering.</p>
-
-      <p>His research interest is in software engineering (software quality, software process improvement, software
-        architecture analysis), and fault tolerant systems and reliability.</p>
-
-      <h3 id="past-winners">Past Winners</h3>
-
-      <table>
-        <thead>
-          <tr>
-            <th>2019-20</th>
-            <th>Dr. Mainak Chaudhuri</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>2018-19</td>
-            <td>Dr. Surender Baswana</td>
-          </tr>
-          <tr>
-            <td>2017-18</td>
-            <td>Dr. Surender Baswana</td>
-          </tr>
-          <tr>
-            <td>2016-17</td>
-            <td>Dr. Surender Baswana</td>
-          </tr>
-
-          <tr>
-            <td>2015-16</td>
-            <td>Dr. Sumit Ganguly</td>
-          </tr>
-
-          <tr>
-            <td>2014-15</td>
-            <td>Dr. Surender Baswana</td>
-          </tr>
-
-          <tr>
-            <td>2013-14</td>
-            <td>Dr. Satyadev Nandakumar</td>
-          </tr>
-
-          <tr>
-            <td>2012-13</td>
-            <td>Dr. Surender Baswana</td>
-          </tr>
-
-          <tr>
-            <td>2011-12</td>
-            <td>Dr. Surender Baswana</td>
-          </tr>
-
-          <tr>
-            <td>2010-11</td>
-            <td>Dr. Surender Baswana</td>
-          </tr>
-
-          <tr>
-            <td>2009-10</td>
-            <td>Dr. Surender Baswana</td>
-          </tr>
-
-          <tr>
-            <td>2008-09</td>
-            <td>Dr. Manindra Agrawal</td>
-          </tr>
-
-          <tr>
-            <td>2007-08</td>
-            <td>Dr. Rajat Moona</td>
-          </tr>
-
-          <tr>
-            <td>2003-04</td>
-            <td>Dr. Deepak Gupta &amp; Dr. Rajat Moona</td>
-          </tr>
-
-          <tr>
-            <td>2002-03</td>
-            <td>Dr. Manindra Agrawal</td>
-          </tr>
-
-          <tr>
-            <td>2001-02</td>
-            <td>Dr. Harish Karnick</td>
-          </tr>
-
-          <tr>
-            <td>2000-01</td>
-            <td>Dr. Sumit Ganguly</td>
-          </tr>
-        </tbody>
-      </table>
-    </span>
-  </div>
-</div>
-<!-- /course list -->
+        
+        <p>Dr. Pankaj Jalote is a former faculty member of the Department of CSE, IIT Kanpur. He has authored several
+          well-known books on software engineering and fault tolerance. He is on the Board of Advisors of many software
+          companies in India and USA, is a Technical Advisory Board member for Microsoft Research, India, and is on the
+          Editorial Board of IEEE Transactions on Software Engineering, and International Journal of Emperical Software
+          Engineering.</p>
+          
+          <p>His research interest is in software engineering (software quality, software process improvement, software
+            architecture analysis), and fault tolerant systems and reliability.</p>
+            
+            <h3 id="past-winners">Past Winners</h3>
+            <table id="fac-award-wrapper" class="table table-hover">
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col">Professor</th>
+                  
+                </tr>
+              </thead>
+              
+              
+            </table>
+            <!-- <table align="center">
+              <thead>
+                <tr>
+                  <th>2019-20</th>
+                  <th>Dr. Mainak Chaudhuri</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <tr>
+                  <td>2018-19</td>
+                  <td>Dr. Surender Baswana</td>
+                </tr>
+                <tr>
+                  <td>2017-18</td>
+                  <td>Dr. Surender Baswana</td>
+                </tr>
+                <tr>
+                  <td>2016-17</td>
+                  <td>Dr. Surender Baswana</td>
+                </tr>
+                
+                <tr>
+                  <td>2015-16</td>
+                  <td>Dr. Sumit Ganguly</td>
+                </tr>
+                
+                <tr>
+                  <td>2014-15</td>
+                  <td>Dr. Surender Baswana</td>
+                </tr>
+                
+                <tr>
+                  <td>2013-14</td>
+                  <td>Dr. Satyadev Nandakumar</td>
+                </tr>
+                
+                <tr>
+                  <td>2012-13</td>
+                  <td>Dr. Surender Baswana</td>
+                </tr>
+                
+                <tr>
+                  <td>2011-12</td>
+                  <td>Dr. Surender Baswana</td>
+                </tr>
+                
+                <tr>
+                  <td>2010-11</td>
+                  <td>Dr. Surender Baswana</td>
+                </tr>
+                
+                <tr>
+                  <td>2009-10</td>
+                  <td>Dr. Surender Baswana</td>
+                </tr>
+                
+                <tr>
+                  <td>2008-09</td>
+                  <td>Dr. Manindra Agrawal</td>
+                </tr>
+                
+                <tr>
+                  <td>2007-08</td>
+                  <td>Dr. Rajat Moona</td>
+                </tr>
+                
+                <tr>
+                  <td>2003-04</td>
+                  <td>Dr. Deepak Gupta &amp; Dr. Rajat Moona</td>
+                </tr>
+                
+                <tr>
+                  <td>2002-03</td>
+                  <td>Dr. Manindra Agrawal</td>
+                </tr>
+                
+                <tr>
+                  <td>2001-02</td>
+                  <td>Dr. Harish Karnick</td>
+                </tr>
+                
+                <tr>
+                  <td>2000-01</td>
+                  <td>Dr. Sumit Ganguly</td>
+                </tr>
+              </tbody>
+            </table> -->
+          </span>
+        </div>
+      </div>
+      <!-- /course list -->
     <!-- mobile see all button -->
     <div class="row">
       <div class="col-12 text-center">
@@ -475,12 +508,12 @@
 
 
 <!-- events -->
-<section class="section bg-gray">
+<section class="section bg-gray" id = "events">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="d-flex align-items-center section-title justify-content-between">
-          <h2 class="mb-0 text-nowrap mr-3" id = "eventheading">Events</h2>
+          <h2 class="mb-0 text-nowrap mr-3" >Events</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
         </div>
       </div>
@@ -562,11 +595,11 @@
 
 
 <!-- blog -->
-<section class="section pt-0">
+<section class="section pt-0" id="projects">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class= "section-title" id="projects">Projects</h2>
+        <h2 class= "section-title">Projects</h2>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -691,108 +724,194 @@
 </section>
 <!-- /teachers -->
 
-<!-- footer -->
-<footer>
-  <!-- newsletter -->
-  <div class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Subscribe Now</h3>
-          <form action="#">
-            <div class="input-wrapper">
-              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
-              <button type="submit" value="send" class="btn btn-primary">Join</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- footer content -->
-  <div class="footer bg-footer section border-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
-          <!-- logo -->
-          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
-          <ul class="list-unstyled">
-            <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
-            <li class="mb-2">+1 (2) 345 6789</li>
-            <li class="mb-2">+1 (2) 345 6789</li>
-            <li class="mb-2">contact@yourdomain.com</li>
-          </ul>
-        </div>
-        <!-- company -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">COMPANY</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
-            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
-            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
-            <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
-          </ul>
-        </div>
-        <!-- links -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">LINKS</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
-            <li class="mb-3"><a class="text-color" href="events.html">Events</a></li>
-            <li class="mb-3"><a class="text-color" href="notice.html">Notice</a></li>
-            <li class="mb-3"><a class="text-color" href="scholarship.html">Scholarship</a></li>
-          </ul>
-        </div>
-        <!-- support -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">SUPPORT</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/blog">Forums</a></li>
-            <li class="mb-3"><a class="text-color" href="https://docs.themefisher.com/">Documentation</a></li>
-            <li class="mb-3"><a class="text-color" href="#!">Language</a></li>
-            <li class="mb-3"><a class="text-color" href="#!">Release Status</a></li>
-          </ul>
-        </div>
-        <!-- support -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">RECOMMEND</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/">WordPress</a></li>
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/">LearnPress</a></li>
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/">WooCommerce</a></li>
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/">bbPress</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- copyright -->
-  <div class="copyright py-4 bg-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7 text-sm-left text-center">
-          <p class="mb-0">Copyright &copy;
-            <script>
-              var CurrentYear = new Date().getFullYear()
-              document.write(CurrentYear)
-            </script> 
-            , designed & developed by <a href="https://themefisher.com/" class="text-muted">Themefisher</a>
-          </p>
-        </div>
-        <div class="col-sm-5 text-sm-right text-center">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://facebook.com/themefisher/"><i class="ti-facebook text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://twitter.com/themefisher"><i class="ti-twitter-alt text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://github.com/themefisher"><i class="ti-github text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://instagram.com/themefisher/"><i class="ti-instagram text-primary"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- /footer -->
 
+
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
 <!-- Bootstrap JS -->
@@ -811,6 +930,7 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+<!-- Footer -->
 
 </body>
 </html>
