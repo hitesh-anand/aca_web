@@ -133,4 +133,4 @@ $.get( "data/facultyaward.csv", function( data ) {
 //     });
 // });
 var SmoothScroll=require('smooth-scroll')
-var scroll = new SmoothScroll('a[href*="#"]',{offset:100});
+var scroll = new SmoothScroll('a[href*="#"]',{offset:100,speed:10});
