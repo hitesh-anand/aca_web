@@ -7,7 +7,7 @@
   "homepage": "https://hitesh-anand.github.io/aca_web",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d source",
+    "deploy": "gh-pages -d theme",
     "dev": "gulp",
     "build": "gulp build"
   },
