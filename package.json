@@ -12,8 +12,9 @@
     "build": "gulp build"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "animejs": "^3.2.1",
     "browser-sync": "^2.27.10",
-    "browserify": "^17.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-file-include": "^2.3.0",
@@ -26,11 +27,36 @@
     "npm": "^8.19.3",
     "require": "^2.4.20",
     "sass": "^1.52.3",
+    "slick-carousel": "^1.8.1",
     "smooth-scroll": "^16.1.3",
-    "vinyl-source-stream": "^2.0.0"
+    "wowjs": "^1.1.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
     "gh-pages": "^4.0.0",
-    "gulp-gh-pages": "^0.5.4"
+    "gulp-connect": "^5.7.0",
+    "gulp-gh-pages": "^0.5.4",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
+      ]
+    ]
   }
 }
