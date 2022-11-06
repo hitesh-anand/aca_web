@@ -1,0 +1,1 @@
+{"version":3,"sources":["my.scss","my.css"],"names":[],"mappings":"AAGA;EACI,UAAA;EACA,SAAA;ACFJ","file":"my.css","sourcesContent":["// #events-list li {\n    \n// }\n.navbar-brand{\n    padding: 0;\n    margin: 0;\n}",".navbar-brand {\n  padding: 0;\n  margin: 0;\n}"]}

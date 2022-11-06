@@ -12,6 +12,7 @@ const comments = require("gulp-header-comment");
 var deploy      = require('gulp-gh-pages');
 
 var browserify = require('browserify');
+var  babelify = require('babelify');
 
 
 var source = require('vinyl-source-stream');
@@ -41,6 +42,21 @@ var path = {
     dirDev: "theme/",
   },
 };
+
+gulp.task("build:import", function(){
+  return browserify({
+      entries: []
+  })
+  .transform(babelify)
+  .bundle()
+  .pipe(source('bundle.js'))
+  .pipe(gulp.dest(path.build.dirDev + "js/"))
+  .pipe(
+    bs.reload({
+      stream: true,
+    })
+  );
+});
 
 gulp.task('browserify', function() {
   return browserify("source/js/script.js")
@@ -88,19 +104,12 @@ gulp.task("scss:build", function () {
     .pipe(sourcemaps.init())
     .pipe(
       sass({
+        includePaths: ['node_modules'],
         outputStyle: "expanded",
       }).on("error", sass.logError)
     )
     .pipe(autoprefixer())
     .pipe(sourcemaps.write("/"))
-    .pipe(
-      comments(`
-    WEBSITE: https://themefisher.com
-    TWITTER: https://twitter.com/themefisher
-    FACEBOOK: https://www.facebook.com/themefisher
-    GITHUB: https://github.com/themefisher/
-    `)
-    )
     .pipe(gulp.dest(path.build.dirDev + "css/"))
     .pipe(
       bs.reload({
@@ -191,6 +200,7 @@ gulp.task(
   gulp.series(
     "clean",
     "html:build",
+    "build:import",
     'browserify',
     "scss:build",
     "images:build",
@@ -212,6 +222,7 @@ gulp.task(
   "build",
   gulp.series(
     "html:build",
+    "build:import",
     'browserify',
     "scss:build",
     "images:build",
