@@ -1,1 +1,1 @@
-{"version":3,"sources":["my.scss","my.css"],"names":[],"mappings":"AAGA;EACI,UAAA;EACA,SAAA;ACFJ","file":"my.css","sourcesContent":["// #events-list li {\n    \n// }\n.navbar-brand{\n    padding: 0;\n    margin: 0;\n}",".navbar-brand {\n  padding: 0;\n  margin: 0;\n}"]}
+{"version":3,"sources":["my.scss","my.css"],"names":[],"mappings":"AAGA;EACI,UAAA;EACA,SAAA;ACFJ","file":"my.css","sourcesContent":["// #events-list li {\r\n    \r\n// }\r\n.navbar-brand{\r\n    padding: 0;\r\n    margin: 0;\r\n}",".navbar-brand {\n  padding: 0;\n  margin: 0;\n}"]}
